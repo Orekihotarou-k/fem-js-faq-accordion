@@ -107,27 +107,25 @@
 
   <script>
     
-    function toggleIcons(event) {
-  const target = event.target;
-  const plusIcon = target.nextElementSibling.querySelector('.plus');
-  const minusIcon = target.nextElementSibling.querySelector('.minus');
+      function toggleIcons(event) {
+      const target = event.target;
+      const plusIcon = target.nextElementSibling.querySelector('.plus');
+      const minusIcon = target.nextElementSibling.querySelector('.minus');
 
-  if (plusIcon.style.display === 'none') {
-    plusIcon.style.display = 'block';
-    minusIcon.style.display = 'none';
-  } else {
-    plusIcon.style.display = 'none';
-    minusIcon.style.display = 'block';
-  }
-}
+      if (plusIcon.style.display === 'none') {
+        plusIcon.style.display = 'block';
+        minusIcon.style.display = 'none';
+      } else {
+        plusIcon.style.display = 'none';
+        minusIcon.style.display = 'block';
+      }
+    }
 
-// Add click event listener to each trigger
-  const trigger = document.querySelectorAll('.accordion-trigger')
-  trigger.forEach(trigger => {
-  trigger.addEventListener('click', toggleIcons);
-});
-
-
+    // Add click event listener to each trigger
+      const trigger = document.querySelectorAll('.accordion-trigger')
+      trigger.forEach(trigger => {
+      trigger.addEventListener('click', toggleIcons);
+    });
 
   </script>
 </body>
