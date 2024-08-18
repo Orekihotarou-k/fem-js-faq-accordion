@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+/* root */
+:root {
+    --clr-white: #ffffff;
+    --clr-light-pink: #f9f0ff;
+    --clr-grayish-purple: #8c6991;
+    --clr-dark-purple: #2f1533;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --ff: 'Work Sans', sans-serif;
+
+    --fz-base: 1rem;
+    --fz-md: 1.1rem;
+    --fz-xl: 3.25rem;
+}
+
+
+/* ##########
+reset
+##########*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    font-weight: var(--fw-700);
+    color: var(--clr-dark-purple);
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+    color: var(--clr-grayish-purple);
+}
+
+body {
+    min-width: 100%;
+    max-width: 1440px;
+    font-size: var(--fz);
+    font-family: var(--ff);
+}
+
+
+/* helper classes */
+.flex {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+
+/* typography */
+.title {
+    font-size: var(--fz-xl);
+}
+
+.faq-question {
+    font-size: var(--fz-md);
+    font-weight: var(--fw-600);
+    color: var(--clr-dark-purple);
+}
+
+.faq-question:hover {
+    color: var(--clr-grayish-purple);
+}
+
+.faq-answer {
+    color: var(--clr-grayish-purple);
+    height: 0;
+    overflow: hidden;
+}
+
+.faq-answer.faq-active {
+    height: auto;
+    overflow: visible;
+}
+
+
+/* general styles */
+main {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100dvh;
+    background: url(assets/images/background-pattern-desktop.svg) no-repeat var(--clr-light-pink);
+    background-size: contain;
+}
+
+.faq-container {
+    max-width: 45rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px #efdefa;
+    background: var(--clr-white);
+}
+
+.icon-minus {
+    display: none;
+}
+
+hr {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 1px;
+    margin: 1.25rem 0;
+    background: var(--clr-light-pink)
+}
+
+.faq-button {
+    width: 100%;
+    justify-content: space-between;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 1.5rem 0 1rem;
+}
+
+.faq-button:focus-visible {
+    padding: 5px;
+    border-radius: 5px;
+    outline: 2px solid #2f1533;
+}

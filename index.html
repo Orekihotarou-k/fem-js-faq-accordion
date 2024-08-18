@@ -8,125 +8,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href=" /styles.css">
+
+  <script src="script.js" defer></script>
+
   
   <title>Frontend Mentor | FAQ accordion</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-
-<div class="wrapper">
-
-  <div class="accordion">
-
-    <h1 class="accordion-title"><img src="assets/images/icon-star.svg" alt=""> FAQs</h1>
-
-    <div class="accordion-details">
-      <label class="accordion-trigger">
-        <input type="checkbox">
-        <h2> What is Frontend Mentor, and how will it help me? <img src="assets/images/icon-plus.svg" alt="" class="plus">
-          <img src="assets/images/icon-minus.svg" alt="" class="minus">
-        </h2>
-      </label>
-
-      <div class="accordion-summary">
-        <p>Frontend Mentor offers realistic coding challenges to help     developers improve their 
-          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-          all levels and ideal for portfolio building.</p>
+  <main>
+    <section class="faq-container">
+      <div class="flex ">
+        <img src="assets/images/icon-star.svg" alt="icon-star">
+        <h1 class="title">FAQs</h1>
       </div>
-    </div>
 
-    <div class="accordion-details">
-      <label class="accordion-trigger">
-        <input type="checkbox">
-        <h2>Is Frontend Mentor free?
+      <div class="faq-item">
+        <button class="faq-button flex" aria-expanded="false" aria-controls="faq-1">
+          <p class="faq-question">What is Frontend Mentor and how will it help me?</p>
+          <img src="assets/images/icon-plus.svg" alt="icon-plus" class="icon-plus">
+          <img src="assets/images/icon-minus.svg" alt="icon-minus" class="icon-minus">
+        </button>
 
-          <img src="assets/images/icon-plus.svg" alt="" class="plus">
-          <img src="assets/images/icon-minus.svg" alt="" class="minus">
-
-        </h2>
-      </label>
-
-      <div class="accordion-summary">
-        <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-          option providing access to a range of projects suitable for all skill levels.</p>
+        <p class="faq-answer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur enim dolorum asperiores laboriosam illum atque minima expedita facilis architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, corporis!
+        </p>
       </div>
-    </div>
 
-    <div class="accordion-details">
-      <label class="accordion-trigger">
-        <input type="checkbox">
-        <h2>Can I use Frontend Mentor projects in my portfolio?
+      <hr>
 
-          <img src="assets/images/icon-plus.svg" alt="" class="plus">
-          <img src="assets/images/icon-minus.svg" alt="" class="minus">
+      <div class="faq-item">
+        <button class="faq-button flex" aria-expanded="false" aria-controls="faq-1">
+          <p class="faq-question">Is Frontend Mentor free?</p>
+          <img src="assets/images/icon-plus.svg" alt="icon-plus" class="icon-plus">
+          <img src="assets/images/icon-minus.svg" alt="icon-minus" class="icon-minus">
+        </button>
 
-        </h2>
-      </label>
-
-      <div class="accordion-summary">
-        <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-          way to showcase your skills to potential employers!</p>
+        <p class="faq-answer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur enim dolorum asperiores laboriosam illum atque minima expedita facilis architecto. 
+        </p>
       </div>
-    </div>
 
-    <div class="accordion-details">
-      <label class="accordion-trigger">
-        <input type="checkbox">
-        <h2>How can I get help if I'm stuck on a Frontend Mentor challenge?
+      <hr>
 
-          <img src="assets/images/icon-plus.svg" alt="" class="plus">
-          <img src="assets/images/icon-minus.svg" alt="" class="minus">
+      <div class="faq-item">
+        <button class="faq-button flex" aria-expanded="false" aria-controls="faq-1">
+          <p class="faq-question">Can I use Frontend Mentor projects in my portfolio?</p>
+          <img src="assets/images/icon-plus.svg" alt="icon-plus" class="icon-plus">
+          <img src="assets/images/icon-minus.svg" alt="icon-minus" class="icon-minus">
+        </button>
 
-        </h2>
-      </label>
-
-      <div class="accordion-summary">
-        <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-          channel where you can ask questions and seek support from other community members.</p>
+        <p class="faq-answer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur enim dolorum asperiores laboriosam illum atque minima expedita facilis architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, corporis!
+        </p>
       </div>
-    </div>
-    
-  </div>
 
-  </div>
+      <hr>
 
-</div>
+      <div class="faq-item">
+        <button class="faq-button flex" aria-expanded="false" aria-controls="faq-1">
+          <p class="faq-question">Can I get help if I'm stuck on a challenge?</p>
+          <img src="assets/images/icon-plus.svg" alt="icon-plus" class="icon-plus">
+          <img src="assets/images/icon-minus.svg" alt="icon-minus" class="icon-minus">
+        </button>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Levis Bohse</a>.
-  </div>
+        <p class="faq-answer">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur enim dolorum asperiores laboriosam illum atque minima expedita facilis architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, corporis!
+        </p>
+      </div>
 
-  <script>
-    
-      function toggleIcons(event) {
-      const target = event.target;
-      const plusIcon = target.nextElementSibling.querySelector('.plus');
-      const minusIcon = target.nextElementSibling.querySelector('.minus');
+    </section>
+  </main>
 
-      if (plusIcon.style.display === 'none') {
-        plusIcon.style.display = 'block';
-        minusIcon.style.display = 'none';
-      } else {
-        plusIcon.style.display = 'none';
-        minusIcon.style.display = 'block';
-      }
-    }
 
-    // Add click event listener to each trigger
-      const trigger = document.querySelectorAll('.accordion-trigger')
-      trigger.forEach(trigger => {
-      trigger.addEventListener('click', toggleIcons);
-    });
 
-  </script>
+
 </body>
 </html>
